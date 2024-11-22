@@ -1,0 +1,31 @@
+form{
+    background-color: aquamarine;
+    width: 500px;
+    height: 560px;
+
+    border-radius: 10px;
+
+    margin-left: 280px;
+}
+input{
+    width: 80%;
+    height: 35px;
+
+    margin-left: 40px;
+    border-radius: 5px;
+}
+#l1{
+    margin-top: 20px;
+}
+label{
+    margin-left: 20px;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+button{
+    margin-left: 130px;
+
+    width: 50%;
+}

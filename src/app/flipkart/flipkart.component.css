@@ -1,0 +1,52 @@
+.container-1{
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+
+    gap: 10px;
+}
+.picture{
+    position: relative;
+    display: inline-block;
+}
+img{
+    display: block;
+}
+.container-2{
+
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    background-color: black solid;
+    position: relative;
+    display: inline-block;
+
+    text-align: center;
+}
+.rating-box{
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+
+    display: inline-block;
+    padding: 0px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+    background-color: #5b5555;
+    color: white;
+    box-shadow: 2px 5px rgba(0,0,0,0.1);
+}
+.rating-box.rating{
+    font-size: 1.0rem;
+    margin-right: 5px;
+
+    color: #f39c12;
+}
+h5{
+    text-wrap: 200;
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}

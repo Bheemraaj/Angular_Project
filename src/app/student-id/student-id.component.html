@@ -1,0 +1,50 @@
+<h2>Student_Id</h2>
+<div>
+    <!-- <input type="text" placeholder="search " [(ngModel)]="term" (keyup)="filter()"> -->
+    <input type="text" placeholder="search ">
+<select>
+    <option>name</option>
+    <option>city</option>
+    <option>phone</option>
+    <option>email</option>
+</select>
+<!-- <select [(ngModel)]="order"> -->
+<select> 
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<!-- <button (click)="sorted()">sort</button> -->
+
+<button>sort</button>
+
+<!-- pagination [(ngModel)]="limit"-->
+<select>
+    <option>10</option>
+    <option>20</option>
+    <option>30</option>
+</select>
+<!-- [(ngModel)]="page" -->
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+<button>Pagenation</button>
+</div><br>
+<div class="container1">
+    <div class="container2" *ngFor="let student_id of student_ids">
+        <label>Name :{{student_id.name}}</label><br>
+        <label>Phone :{{student_id.phone}}</label><br>
+        <label>City :{{student_id.city}}</label><br>
+        <label>DOB:{{student_id.dob}}</label><br>
+        <label>Profile_picture :<img src="{{student_id.profile_picture}}" alt="" width="50px" height="50px"></label><br>
+        <label>Email :{{student_id.email}}</label><br>
+        <label>School_logo : <img src="{{student_id.school_logo}}" alt="" width="50px" height="50px"></label><br>
+        <label>School_name :{{student_id.school_name}}</label><br>
+        <label>School_city :{{student_id.school_city}}</label><br>
+        <label>School_pin :{{student_id.school_pin}}</label><br>
+        <label>Id :{{student_id.id}}</label><br>
+
+    </div>
+
+</div>

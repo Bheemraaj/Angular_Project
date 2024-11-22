@@ -1,0 +1,44 @@
+form{
+    width: 350px;
+    height: 350px;
+
+    background-color: azure;
+
+    
+    flex-direction: column;
+    margin: auto;
+    margin-top: 12%;
+
+    border-radius: 6px;
+}
+input{
+    width: 78%;
+    height: 7%;
+    margin-left: 33px;
+    margin-top: 10px;
+
+    border-radius: 3px;
+}
+button{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+
+    margin-top: 13px;
+    margin-left: 35px;
+}
+h1{
+    text-align: center;
+    color: red;
+    padding-top: 10px;
+}
+h2{
+    text-align: center;
+    color: green;
+}
+.l1{
+    margin-left: 130px;
+}

@@ -1,0 +1,35 @@
+<form>
+
+                 <!-- Employee -->
+
+            <div class="div1">
+                <h3>Add Employee</h3>
+
+            <label for="">Name :</label><br>
+            <input type="text" name="empName" [(ngModel)]="empName"><br>
+            <label for="">Role :</label><br>
+            <input type="text" name="role" [(ngModel)]="role"><br><br>
+
+
+            <button (click)="add()">Add</button><br><br>
+            </div>
+
+            <h2>Registerd Employee</h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employees">
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.role}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+</form>

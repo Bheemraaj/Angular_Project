@@ -1,0 +1,15 @@
+<h2>Create-account works!</h2>
+<form [formGroup]="accountForm">
+    <label for="" id="l1">Account_name :</label><br>
+    <input type="text" formControlName="account_name"><br>
+    <label for="">Available_balance :</label><br>
+    <input type="text" formControlName="available_balance"><br>
+    <label for="">Account_number :</label><br>
+    <input type="text" formControlName="account_number"><br>
+    <label for="">City :</label><br>
+    <input type="text" formControlName="city"><br>
+    <label for="">Profie_picture :</label><br>
+    <input type="text" formControlName="profie_picture"><br><br>
+
+    <button (click)="submit()" class="btn btn-primary">Submit</button>
+</form>

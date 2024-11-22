@@ -1,0 +1,54 @@
+<h1 style="text-align: center; color: yellow;">Employee Task!</h1>
+
+<h2>Employees</h2>
+<label for="">Name</label>
+<input type="text" [(ngModel)]="name">
+<label for="">Experience</label>
+<input type="text" [(ngModel)]="experience">
+<label for="">package</label>
+<input type="text" [(ngModel)]="package">
+<label for="">Role</label>
+<input type="text" [(ngModel)]="empRole">
+
+<button class="btn btn-primary" (click)="add()">Add</button>
+
+<button (click)="bonus()" class="btn btn-info">50k Bonus</button>
+<button (click)="hike()" class="btn btn-primary">Hike</button>
+<input  class="w-25 p-3 h-75 d-inline-block" type="text" placeholder="Serach name" [(ngModel)]="term" (keyup)="search()">
+<select class="form-control" [(ngModel)]="role" (change)="rolefilter()">
+    <option>UIDeveloper</option>
+    <option>Software Developer</option>
+    <option>Data engineer</option>
+    <option>Testing Engineer</option>
+</select>
+
+<button (click)="packagehl()" class="btn btn-warning">Package High to low</button><br><br>
+<button (click)="packagelh()" class="btn btn-warning">Package Low to High</button>
+
+<button class="btn btn-primary" (click)="total()">Cost to company</button>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>SNo</th>
+            <th>Name</th>
+            <th>Experience</th>
+            <th>Package</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees let i=index">
+            <td>{{i+1}}</td>
+            <td [ngClass]="{'text-danger':employee.package<1000000,'text-success':employee.package>=1000000}">{{employee.name | uppercase}}</td>
+            <td>{{employee.experience}}</td>
+            <td>{{employee.package}}</td>
+            <td>{{employee.role}}</td>
+            <td>
+                <button *ngIf="employee.package>500000" (click)="delete(i)" class="btn btn-danger">delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>

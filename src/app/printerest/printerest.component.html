@@ -1,0 +1,12 @@
+<div class="container1">
+    <div class="image-container" *ngFor="let printerest of printerests">
+        <img src="{{printerest.download_url}}" alt="" width="100px" height="100px">
+        <div class="overlay">
+            <h4>{{printerest.author}}</h4>
+            <a href="{{printerest.download_url}}" class="btn btn-primary" download>Download</a>
+            
+        </div>
+       
+    </div>
+
+</div>

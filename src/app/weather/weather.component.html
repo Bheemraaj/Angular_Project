@@ -1,0 +1,19 @@
+<div *ngIf="weathers" class="weather-container1">
+    <h2>Weather in Hyderabad</h2>
+    <div class="weather-container2" 
+    [ngClass]="{
+        'blue': weathers.current_weather.windspeed < 0,
+        'yellow': weathers.current_weather.windspeed >= 0 && weathers.current_weather.windspeed < 30,
+        'green': weathers.current_weather.windspeed >= 30 && weathers.current_weather.windspeed <= 35,
+        'red': weathers.current_weather.windspeed > 35
+     }">
+     </div>
+    <p style="color: orange; font-size: 30px;">{{weathers.current_weather.temperature}} °C</p>
+    <p>Windspeed: {{weathers.current_weather.windspeed}} km/h</p>
+    <p>Winddirection: {{weathers.current_weather.winddirection}} °</p>
+   
+    <p *ngIf="weathers.current_weather.is_day === 1" style="color:blue; font-size: 25px;" >Day</p>
+    <p *ngIf="weathers.current_weather.is_day === 0"  style="color:blue">Night</p>
+   
+</div>
+

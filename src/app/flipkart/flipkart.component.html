@@ -1,0 +1,17 @@
+<div class="container-1">
+    <div class="container-2" *ngFor="let flipkart of flipkarts">
+
+        <div class="picture">
+            <img src="{{flipkart.image}}" alt="" width="150px" height="150px">
+
+            <div class="rating-box">
+                <span class="rating">{{flipkart.rating.rate}}</span>
+                <span class="count">{{flipkart.rating.count}}</span>
+            </div>
+        </div>
+        <h4>{{flipkart.category}}</h4>
+        <h5 class="marquee" style="color: yellow; font-size: small;">{{flipkart.title}}</h5>
+        <h6 style="color: khaki;">Rs:{{flipkart.price}}</h6>
+    </div>
+
+</div>

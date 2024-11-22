@@ -1,0 +1,39 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100%;
+
+    background-color: cadetblue;
+
+    cursor: pointer;
+
+    color: white;
+    overflow: auto;
+}
+.right{
+    width: 80%;
+    height: 100%;
+
+    background-color: teal;
+
+    overflow: auto;
+}
+h1,h4{
+    padding-left: 20px;
+}
+#db1{
+    width: 80%;
+    height: 30px;
+    margin-left: 20px;
+
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+
+    color: white;
+}

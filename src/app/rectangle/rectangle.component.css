@@ -1,0 +1,41 @@
+form{
+    width:350px;
+    height: 370px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    flex-direction: column;
+    margin: auto;
+    margin-top: 12%;
+}
+button{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+
+    margin-top: 13px;
+    margin-left: 35px;
+}
+
+input{
+    width: 76%;
+    height: 20px;
+
+    margin-bottom: 30px;
+    margin-left: 35px;
+}
+h1,h2{
+    text-align: center;
+}
+h1{
+    color: green;
+    padding-top: 8px;
+}
+label{
+    margin-left: 36px;
+    margin-top: 20px;
+}

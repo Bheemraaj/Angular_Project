@@ -1,0 +1,22 @@
+<div>
+    <form>
+        <h1>BMI</h1>
+    
+            <label for="" class="l1"> <b>Weight :</b></label>
+            <input type="number" name="num1" [(ngModel)]="num1">
+            <br> <br>
+            <label for="" class="l1"><b>Height: </b></label>
+            <input type="number" name="num2" [(ngModel)]="num2">
+    
+            <br>
+    
+            <button (click)="bmi()"><b>Calculator</b></button>
+    
+    
+            <h2>{{result}}</h2>
+    </form>
+    
+    <div class="img1">
+        <img src="/assets/bmi.jpg" alt="">
+    </div>
+</div>

@@ -1,0 +1,27 @@
+h2{
+    text-align: center;
+    color: white;
+}
+form{
+    background-color: darkkhaki;
+
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+
+
+    margin-left: 325px;
+}
+input{
+    width: 80%;
+    margin-left: 40px;
+}
+#l1{
+    margin-top: 20px;
+}
+button{
+    margin-left: 180px;
+}
+label{
+    margin-left: 43px;
+}

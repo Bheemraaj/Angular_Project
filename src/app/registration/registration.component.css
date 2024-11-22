@@ -1,0 +1,25 @@
+form{
+
+    background-color: darkkhaki;
+
+}
+button{
+    width: 60px;
+    height: 30px;
+
+    color: white;
+    border: none;
+
+    background-color: blueviolet;
+}
+h2{
+    text-align: center;
+    background-color: aqua;
+}
+.div1{
+
+    margin-left: 100px;
+}
+h3,h2{
+    padding: 15px;
+}
