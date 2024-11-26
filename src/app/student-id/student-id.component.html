@@ -1,50 +1,55 @@
 <h2>Student_Id</h2>
-<div>
-    <!-- <input type="text" placeholder="search " [(ngModel)]="term" (keyup)="filter()"> -->
-    <input type="text" placeholder="search ">
-<select>
+<input type="text" [(ngModel)]="term" (keyup)="filter()">
+<select [(ngModel)]="column">
     <option>name</option>
     <option>city</option>
     <option>phone</option>
     <option>email</option>
 </select>
-<!-- <select [(ngModel)]="order"> -->
-<select> 
+<select [(ngModel)]="order"> 
     <option>asc</option>
     <option>desc</option>
 </select>
-<!-- <button (click)="sorted()">sort</button> -->
+<button class="btn btn-info" (click)="sorted()">Sort</button>
 
-<button>sort</button>
-
-<!-- pagination [(ngModel)]="limit"-->
-<select>
+<select [(ngModel)]="limit">
     <option>10</option>
     <option>20</option>
     <option>30</option>
 </select>
-<!-- [(ngModel)]="page" -->
-<select>
+<select [(ngModel)]="page">
     <option>1</option>
     <option>2</option>
     <option>3</option>
 </select>
-<button>Pagenation</button>
-</div><br>
-<div class="container1">
-    <div class="container2" *ngFor="let student_id of student_ids">
-        <label>Name :{{student_id.name}}</label><br>
-        <label>Phone :{{student_id.phone}}</label><br>
-        <label>City :{{student_id.city}}</label><br>
-        <label>DOB:{{student_id.dob}}</label><br>
-        <label>Profile_picture :<img src="{{student_id.profile_picture}}" alt="" width="50px" height="50px"></label><br>
-        <label>Email :{{student_id.email}}</label><br>
-        <label>School_logo : <img src="{{student_id.school_logo}}" alt="" width="50px" height="50px"></label><br>
-        <label>School_name :{{student_id.school_name}}</label><br>
-        <label>School_city :{{student_id.school_city}}</label><br>
-        <label>School_pin :{{student_id.school_pin}}</label><br>
-        <label>Id :{{student_id.id}}</label><br>
+<button class="btn btn-primary" (click)="pagenation()">Pagenation</button>
 
+    <div class="container">
+        <div class="parent" *ngFor="let student_id of student_ids">
+           <div class="top">
+                <img src="{{student_id.school_logo}}" alt="" width="100px"><br>
+                <div class="topChild">
+                    <h3>{{student_id.school_name}}</h3>
+                    <h5>{{student_id.school_city}}</h5>
+                    <h6>{{student_id.school_pin}}</h6>
+                </div>
+           </div><br>
+           <div class="middle">
+               <div class="left">
+                   <span>Name :{{student_id.name}}</span><br>
+                   <span>Phone :{{student_id.phone}}</span><br>
+                   <span>DOB:{{student_id.dob}}</span><br>
+                   <span>Email :{{student_id.email}}</span><br>
+                   <span>City :{{student_id.city}}</span><br>
+    
+                </div>
+                <div class="right">
+                    <img src="{{student_id.profile_picture}}" alt="" width="200px" height="150px"><br>
+    
+                </div>
+           </div><br>
+           <div class="bottom">
+            <button class="btn btn-danger" (click)="delete(student_id.id)">Delete</button>
+           </div>
+        </div> 
     </div>
-
-</div>

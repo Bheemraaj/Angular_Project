@@ -27,6 +27,8 @@ import { WeatherComponent } from './weather/weather.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentIdComponent } from './student-id/student-id.component';
+import { CreateStudentIdComponent } from './create-student-id/create-student-id.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 
 @NgModule({
@@ -54,6 +56,8 @@ import { StudentIdComponent } from './student-id/student-id.component';
     CreateVehicleComponent,
     CreateAccountComponent,
     StudentIdComponent,
+    CreateStudentIdComponent,
+    CreateUserComponent,
 
   ],
   imports: [
