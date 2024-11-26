@@ -22,6 +22,8 @@ import { WeatherComponent } from './weather/weather.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { StudentIdComponent } from './student-id/student-id.component';
+import { CreateStudentIdComponent } from './create-student-id/create-student-id.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -45,7 +47,9 @@ const routes: Routes = [
     {path:'weather',component:WeatherComponent},
     {path:'create_vehicle',component:CreateVehicleComponent},
     {path:'create_account',component:CreateAccountComponent},
-    {path:'student_id',component:StudentIdComponent}
+    {path:'student_id',component:StudentIdComponent},
+    {path:'create-student_id',component:CreateStudentIdComponent},
+    {path:'create-user',component:CreateUserComponent}
     
     ]},
     {path:'login',component:LoginComponent}

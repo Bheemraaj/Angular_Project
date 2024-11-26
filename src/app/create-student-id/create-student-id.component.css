@@ -1,0 +1,25 @@
+.container{
+    background-color: antiquewhite;
+
+    width: 400px;
+    height: 660px;
+    margin-top: 10px;
+
+    border-radius: 10px;
+}
+input{
+    width: 80%;
+    margin-left: 30px;
+    height: 28px;
+    border-radius: 5px;
+}
+label{
+    margin-left: 30px;
+}
+button{
+    margin-left: 150px;
+}
+h2{
+    text-align: center;
+    color: dodgerblue;
+}
