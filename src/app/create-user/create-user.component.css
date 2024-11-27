@@ -1,5 +1,18 @@
 form{
-    width: 350px;
-    height: 400px;
+    width: 370px;
+    height: 600px;
    background-color: coral;
+   cursor: pointer;
+   /* overflow: auto; */
+}
+h2{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+input{
+    margin-left: 30px;
+}
+label{
+    padding-left: 20px;
 }

@@ -24,6 +24,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentIdComponent } from './student-id/student-id.component';
 import { CreateStudentIdComponent } from './create-student-id/create-student-id.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentComponent } from './student/student.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent,children:[
@@ -49,7 +50,8 @@ const routes: Routes = [
     {path:'create_account',component:CreateAccountComponent},
     {path:'student_id',component:StudentIdComponent},
     {path:'create-student_id',component:CreateStudentIdComponent},
-    {path:'create-user',component:CreateUserComponent}
+    {path:'create-user',component:CreateUserComponent},
+    {path:'student',component:StudentComponent}
     
     ]},
     {path:'login',component:LoginComponent}

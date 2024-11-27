@@ -29,6 +29,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { StudentIdComponent } from './student-id/student-id.component';
 import { CreateStudentIdComponent } from './create-student-id/create-student-id.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { StudentComponent } from './student/student.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
     StudentIdComponent,
     CreateStudentIdComponent,
     CreateUserComponent,
+    StudentComponent,
 
   ],
   imports: [
