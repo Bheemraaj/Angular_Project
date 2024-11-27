@@ -1,0 +1,22 @@
+form{
+    width: 350px;
+    height: 500px;
+
+    background-color: bisque;
+    margin-top: 50px;
+    margin-left: 350px;
+    border-radius: 5px;
+
+    overflow: auto;
+}
+h2{
+    text-align: center;
+    color: cadetblue;
+    padding: 15px;
+}
+label{
+    margin-left: 20px;
+}
+#b1{
+    margin-left: 150px;
+}
