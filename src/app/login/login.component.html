@@ -1,12 +1,11 @@
-<form>
+<form [formGroup]="loginForm">
     <h1>Login</h1>
 
-    <input type="text" placeholder="Email or Phone Number" required>
-    <input type="password" placeholder="password" required>
+    <input type="text" placeholder="Email or Phone Number" formControlName="email">
+    <input type="password" placeholder="password" formControlName="password">
 
-    <button routerLink="/dashboard">Login</button>
+    <button (click)="login()" >Login</button>
 
     <p>Forgot Password?</p>
     <hr>
-    <button style="background-color: green">Create New Account</button>
 </form>
