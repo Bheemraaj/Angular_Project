@@ -25,9 +25,10 @@ import { StudentIdComponent } from './student-id/student-id.component';
 import { CreateStudentIdComponent } from './create-student-id/create-student-id.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { StudentComponent } from './student/student.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',canActivate:[AuthenticationGuard],component:DashboardComponent,children:[
     {path:'',component:HomeComponent},
     {path:'home',component:HomeComponent},
     {path:'welcome',component:WelcomeComponent},
